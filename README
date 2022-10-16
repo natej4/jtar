@@ -1,0 +1,5 @@
+The file class provides the stucture for a file object that contains the name, permissions, size, and timestamp of a file, as well as whether or not it is a directory. This information can be accessed through get methods for each piece of data.
+
+-cf first creates a list of all files and directories (including files within those directories) that the user has specified they want to tar. It then grabs the information about those files and puts it into a list of File objects. That list is then written to a .tar binary file, along with the contents of the file if it is not a directory.
+
+-xf reads through the specified tar file and parses out the information for each file/directory within the tar file. It then uses that information to recreate the files and directories within the tar file.
